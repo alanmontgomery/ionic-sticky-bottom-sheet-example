@@ -29,6 +29,8 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({ isOpen, close }) => {
           </IonCol>
         </IonRow>
 
+        {/* Check the comments insside BottomSheetContent component */}
+        {/* Regarding the scrolling of "content" inside a sheet modal */}
         <BottomSheetContent>
           { [...Array(amountOfDummyItems)].map((e, i) => {
             
