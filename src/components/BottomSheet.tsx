@@ -25,7 +25,7 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({ isOpen, close }) => {
       <IonGrid className="ion-padding-top">
         <IonRow>
           <IonCol size="12">
-            <IonSearchbar animated value={search} onIonChange={handleChange} />
+            <IonSearchbar animated value={search} onIonChange={handleChange} placeholder="Search by item number" />
           </IonCol>
         </IonRow>
 
