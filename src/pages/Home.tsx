@@ -1,8 +1,20 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonGrid } from '@ionic/react';
+import { useState } from 'react';
+import { BottomSheet } from '../components/BottomSheet';
 import './Home.css';
 
 const Home: React.FC = () => {
+
+  const [showBottomSheet, setShowBottomSheet] = useState<boolean>(true);
+
+  const handleClose = () => {
+
+    setShowBottomSheet(false);
+    setTimeout(() => {
+      setShowBottomSheet(true);
+    }, 10);
+  }
+
   return (
     <IonPage>
       <IonHeader>
@@ -16,7 +28,8 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
+
+        <BottomSheet isOpen={showBottomSheet} close={handleClose} />
       </IonContent>
     </IonPage>
   );
