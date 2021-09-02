@@ -34,7 +34,7 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({ isOpen, close }) => {
             
             if (search.includes(i.toString()) || search === "") {
               return (
-                <DummyItem number={i} />
+                <DummyItem key={i} number={i} />
               );
             } else {
               return "";

@@ -4,8 +4,7 @@ export const BottomSheetContent: React.FC = ({ children }) => {
 
     <div style={{
         overflow: "scroll",
-        height: "90vh",
-        overscrollBehavior: "auto contain"
+        height: "100vh"
     }}>
       { children }
     </div>
