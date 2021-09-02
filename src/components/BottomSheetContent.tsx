@@ -7,6 +7,8 @@ export const BottomSheetContent: React.FC = ({ children }) => {
     //  Scroll the content down, then try and scroll up
 
     //  Maybe some functionality needed on the Sheet Modal component to keep track of inner content scroll position and only interact with modal if scroll position of inner content is back to top OR if only interacting with the modal container (edges, top, etc)
+
+    //  Applied this CSS just to make it work 50% of the way to test
     <div style={{
         overflow: "scroll",
         height: "100vh"
