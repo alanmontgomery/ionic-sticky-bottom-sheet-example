@@ -1,0 +1,7 @@
+{
+  "name": "ionic-react-bottom-sheet",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
